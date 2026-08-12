@@ -185,9 +185,7 @@
                         </div>
                         <h3 class="font-syne font-bold text-[0.97rem] mb-2 text-current group-hover:text-[#a855f7] transition-colors duration-300">AZ E-Commerce Solar Platform</h3>
                         <p class="text-[0.8rem] custom-tx2 font-light leading-relaxed mb-6 flex-1">Bespoke architecture for high-efficiency inverters, panel selectors, tracking matrices, and continuous fast-checkout channels.</p>
-                        <a href="#" class="proj-link inline-flex items-center gap-[0.4rem] text-[0.76rem] font-semibold text-[#a855f7] hover:gap-[0.7rem] hover:text-[#c084fc] transition-all duration-300 transform hover:translate-x-[3px]">
-                            View Project Case <span>→</span>
-                        </a>
+                        
                     </div>
                 </div>
 
@@ -209,9 +207,7 @@
                         </div>
                         <h3 class="font-syne font-bold text-[0.97rem] mb-2 text-current group-hover:text-[#a855f7] transition-colors duration-300">Bespoke Obsidian Portfolio Node</h3>
                         <p class="text-[0.8rem] custom-tx2 font-light leading-relaxed mb-6 flex-1">Advanced presentation terminal featuring clean light/dark transitions, intersection velocity controllers, and fluid visual element styling.</p>
-                        <a href="#" class="proj-link inline-flex items-center gap-[0.4rem] text-[0.76rem] font-semibold text-[#a855f7] hover:gap-[0.7rem] hover:text-[#c084fc] transition-all duration-300 transform hover:translate-x-[3px]">
-                            View Project Case <span>→</span>
-                        </a>
+                        
                     </div>
                 </div>
 
@@ -232,9 +228,7 @@
                         </div>
                         <h3 class="font-syne font-bold text-[0.97rem] mb-2 text-current group-hover:text-[#a855f7] transition-colors duration-300">AI_Sekho Course Platform</h3>
                         <p class="text-[0.8rem] custom-tx2 font-light leading-relaxed mb-6 flex-1">Highly optimized course builder dashboard with multi-role permissions configurations to map streaming pipelines securely.</p>
-                        <a href="#" class="proj-link inline-flex items-center gap-[0.4rem] text-[0.76rem] font-semibold text-[#a855f7] hover:gap-[0.7rem] hover:text-[#c084fc] transition-all duration-300 transform hover:translate-x-[3px]">
-                            View Project Case <span>→</span>
-                        </a>
+                       
                     </div>
                 </div>
 
@@ -256,9 +250,8 @@
                         </div>
                         <h3 class="font-syne font-bold text-[0.97rem] mb-2 text-current group-hover:text-[#a855f7] transition-colors duration-300">EverTime Medicine Gateway</h3>
                         <p class="text-[0.8rem] custom-tx2 font-light leading-relaxed mb-6 flex-1">Pharmacy application tracking catalogs, product details, shopping carts, and dynamic inventory synchronization scripts.</p>
-                        <a href="#" class="proj-link inline-flex items-center gap-[0.4rem] text-[0.76rem] font-semibold text-[#a855f7] hover:gap-[0.7rem] hover:text-[#c084fc] transition-all duration-300 transform hover:translate-x-[3px]">
-                            View Project Case <span>→</span>
-                        </a>
+                       
+                        <
                     </div>
                 </div>
 
