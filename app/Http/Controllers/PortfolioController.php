@@ -23,6 +23,10 @@ class PortfolioController extends Controller
     {
         return view('sites.portfolio');  
     }
+    public function portfolioDetail()
+    {
+        return view('sites.portfolio-detail');
+    }
     public function contactUs()
     {
         return view('sites.contact-us');

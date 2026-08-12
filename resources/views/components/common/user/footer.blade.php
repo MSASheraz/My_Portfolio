@@ -22,7 +22,7 @@
           <li><a href="{{ route('site.about') }}">About</a></li>
           <li><a href="{{ route('site.services') }}">Services</a></li>
           <li><a href="{{ route('site.portfolio') }}">Portfolio</a></li>
-          <li><a href="{{ route('site.blogs') }}">Blogs</a></li>
+       
           <li><a href="{{ route('site.contact-us') }}">Contact Us</a></li>
         </ul>
       </div>

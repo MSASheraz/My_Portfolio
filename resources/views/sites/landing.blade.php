@@ -123,11 +123,61 @@
     </div>
     <div class="portfolio-scroll-outer" id="pfOuter">
       <div class="portfolio-track" id="pfTrack">
-        <div class="proj-card"><div class="proj-thumb"><div class="thumb-lines"></div><div class="proj-thumb-txt">SaaS</div><div class="thumb-grad"></div><span class="proj-badge">Live</span></div><div class="proj-body"><div class="proj-name">Multi-Tenant SaaS Platform</div><div class="proj-about">Complete SaaS dashboard with billing, role-based access, and real-time analytics for SMBs.</div><div class="tag-row"><span class="tag">Next.js</span><span class="tag">Node.js</span><span class="tag">PostgreSQL</span><span class="tag">Stripe</span></div><a href="#" class="proj-link">View Project →</a></div></div>
-        <div class="proj-card"><div class="proj-thumb"><div class="thumb-lines"></div><div class="proj-thumb-txt">API</div><div class="thumb-grad"></div><span class="proj-badge">Open Source</span></div><div class="proj-body"><div class="proj-name">Laravel API Boilerplate</div><div class="proj-about">Modular API framework with JWT, filtering, rate limiting, and auto Swagger docs.</div><div class="tag-row"><span class="tag">Laravel</span><span class="tag">MySQL</span><span class="tag">Redis</span><span class="tag">Docker</span></div><a href="#" class="proj-link">View Project →</a></div></div>
-        <div class="proj-card"><div class="proj-thumb"><div class="thumb-lines"></div><div class="proj-thumb-txt">E-COM</div><div class="thumb-grad"></div><span class="proj-badge">Client</span></div><div class="proj-body"><div class="proj-name">E-Commerce Platform</div><div class="proj-about">High-traffic ecommerce with cart, payments, inventory tracking and order management.</div><div class="tag-row"><span class="tag">React</span><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">AWS</span></div><a href="#" class="proj-link">View Project →</a></div></div>
-        <div class="proj-card"><div class="proj-thumb"><div class="thumb-lines"></div><div class="proj-thumb-txt">CRM</div><div class="thumb-grad"></div><span class="proj-badge">Enterprise</span></div><div class="proj-body"><div class="proj-name">Custom CRM System</div><div class="proj-about">Customer management with pipeline tracking, email automation and reporting dashboard.</div><div class="tag-row"><span class="tag">Vue.js</span><span class="tag">Laravel</span><span class="tag">MySQL</span><span class="tag">Chart.js</span></div><a href="#" class="proj-link">View Project →</a></div></div>
-        <div class="proj-card"><div class="proj-thumb"><div class="thumb-lines"></div><div class="proj-thumb-txt">APP</div><div class="thumb-grad"></div><span class="proj-badge">Mobile</span></div><div class="proj-body"><div class="proj-name">React Native Delivery App</div><div class="proj-about">Cross-platform delivery app with GPS tracking, push notifications and driver portal.</div><div class="tag-row"><span class="tag">React Native</span><span class="tag">Node.js</span><span class="tag">MongoDB</span><span class="tag">Socket.io</span></div><a href="#" class="proj-link">View Project →</a></div></div>
+        <div class="proj-card">
+          <div class="proj-thumb">
+            <img src="{{asset('images/SAAS.png')}}" alt="Multi-Tenant SaaS Platform" loading="lazy">
+            <span class="proj-badge">Live</span>
+          </div>
+          <div class="proj-body">
+            <div class="proj-name">Multi-Tenant SaaS Platform</div>
+            <div class="proj-about">Complete SaaS dashboard with billing, role-based access, and real-time analytics for SMBs.</div>
+            <div class="tag-row"><span class="tag">Next.js</span><span class="tag">Node.js</span><span class="tag">PostgreSQL</span><span class="tag">Stripe</span></div>
+          </div>
+        </div>
+        <div class="proj-card">
+          <div class="proj-thumb">
+            <img src="{{asset('images/API.png')}}" alt="Laravel API Boilerplate" loading="lazy">
+            <span class="proj-badge">Open Source</span>
+          </div>
+          <div class="proj-body">
+            <div class="proj-name">Laravel API Boilerplate</div>
+            <div class="proj-about">Modular API framework with JWT, filtering, rate limiting, and auto Swagger docs.</div>
+            <div class="tag-row"><span class="tag">Laravel</span><span class="tag">MySQL</span><span class="tag">Redis</span><span class="tag">Docker</span></div>
+          </div>
+        </div>
+        <div class="proj-card">
+          <div class="proj-thumb">
+            <img src="{{asset('images/ecomerce.png')}}" alt="E-Commerce Platform" loading="lazy">
+            <span class="proj-badge">Client</span>
+          </div>
+          <div class="proj-body">
+            <div class="proj-name">E-Commerce Platform</div>
+            <div class="proj-about">High-traffic ecommerce with cart, payments, inventory tracking and order management.</div>
+            <div class="tag-row"><span class="tag">React</span><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">AWS</span></div>
+          </div>
+        </div>
+        <div class="proj-card">
+          <div class="proj-thumb">
+            <img src="{{asset('images/CRM.png')}}" alt="Custom CRM System" loading="lazy">
+            <span class="proj-badge">Enterprise</span>
+          </div>
+          <div class="proj-body">
+            <div class="proj-name">Custom CRM System</div>
+            <div class="proj-about">Customer management with pipeline tracking, email automation and reporting dashboard.</div>
+            <div class="tag-row"><span class="tag">Vue.js</span><span class="tag">Laravel</span><span class="tag">MySQL</span><span class="tag">Chart.js</span></div>
+          </div>
+        </div>
+        <div class="proj-card">
+          <div class="proj-thumb">
+            <img src="{{asset('images/react native.png')}}" alt="React Native Delivery App" loading="lazy">
+            <span class="proj-badge">Mobile</span>
+          </div>
+          <div class="proj-body">
+            <div class="proj-name">React Native Delivery App</div>
+            <div class="proj-about">Cross-platform delivery app with GPS tracking, push notifications and driver portal.</div>
+            <div class="tag-row"><span class="tag">React Native</span><span class="tag">Node.js</span><span class="tag">MongoDB</span><span class="tag">Socket.io</span></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -166,7 +216,7 @@
   </section>
 
   <!-- BLOGS SECTION -->
-  <section id="blogs">
+  <!-- <section id="blogs">
     <div class="wrap">
       <div id="blgHdr" style="text-align:center">
         <div class="s-eye" style="justify-content:center">Insights</div>
@@ -179,7 +229,7 @@
         <div class="blog-card"><div class="blog-thumb"><div class="blog-lines"></div><div class="blog-thumb-txt">03</div><div class="blog-grad"></div><span class="blog-cat">GSAP</span></div><div class="blog-body"><div class="blog-meta">April 2026 · 5 min read</div><div class="blog-title">GSAP ScrollTrigger: Scrub, Pin &amp; Stagger Explained</div><div class="blog-excerpt">Practical scroll-driven animation techniques covering scrub timelines, pinned sections and stagger sequences.</div><a href="#" class="blog-link">Read More →</a></div></div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- CONTACT SECTION -->
   <section id="contactus">

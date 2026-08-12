@@ -13,9 +13,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [PortfolioController::class, 'laynding'])->name('site.laynding');
 Route::get('/about', [PortfolioController::class, 'about'])->name('site.about');
 Route::get('/portfolio', [PortfolioController::class, 'portfolio'])->name('site.portfolio');
+// Route::get('/portfolio-detail', [PortfolioController::class, 'portfolioDetail'])->name('site.portfolio-detail');
 Route::get('/contact-us', [PortfolioController::class, 'contactUs'])->name('site.contact-us');
 Route::get('/services', [PortfolioController::class, 'services'])->name('site.services');
-Route::get('/blogs', [PortfolioController::class, 'blogs'])->name('site.blogs');
+// Route::get('/blogs', [PortfolioController::class, 'blogs'])->name('site.blogs');
 
 // Public Contact Form Submission
 Route::post('/contact', [MessageController::class, 'store'])->name('contact.store');

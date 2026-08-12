@@ -403,12 +403,14 @@ html.light .about-badge { background:rgba(255,255,255,.9); box-shadow:0 4px 20px
 }
 html.light .proj-card { background:rgba(255,255,255,.8); border-color:rgba(124,58,237,.12); }
 .proj-card:hover { box-shadow:var(--sh-hover-proj); border-color:rgba(168,85,247,.32); transform:translateY(-6px); }
-.proj-thumb { height:175px; position:relative; overflow:hidden; background:var(--bg3); display:flex; align-items:center; justify-content:center; }
+.proj-thumb { height:185px; position:relative; overflow:hidden; background:var(--bg3); }
+.proj-thumb img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center top; display:block; z-index:1; transition:transform .5s ease; }
+.proj-card:hover .proj-thumb img { transform:scale(1.06); }
 .proj-thumb-txt { font-family:'Syne',sans-serif; font-size:4rem; font-weight:800; color:var(--p); opacity:.12; letter-spacing:-0.06em; user-select:none; }
-.thumb-lines { position:absolute; inset:0; background-image:repeating-linear-gradient(45deg,rgba(124,58,237,.12) 0,rgba(124,58,237,.12) 1px,transparent 0,transparent 50%); background-size:18px 18px; opacity:.7; }
-.thumb-grad { position:absolute; inset:0; background:linear-gradient(135deg,rgba(124,58,237,.1) 0%,transparent 55%),linear-gradient(to bottom,transparent 55%,rgba(5,5,14,.6)); }
-html.light .thumb-grad { background:linear-gradient(135deg,var(--ps),transparent 55%),linear-gradient(to bottom,transparent 55%,rgba(255,255,255,.4)); }
-.proj-badge { position:absolute; top:.875rem; right:.875rem; padding:.25rem .75rem; border-radius:100px; background:linear-gradient(135deg,var(--p),var(--p2)); color:#fff; font-size:.58rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; }
+.thumb-lines { position:absolute; inset:0; z-index:2; background-image:repeating-linear-gradient(45deg,rgba(124,58,237,.12) 0,rgba(124,58,237,.12) 1px,transparent 0,transparent 50%); background-size:18px 18px; opacity:.25; pointer-events:none; }
+.thumb-grad { position:absolute; inset:0; z-index:3; pointer-events:none; background:linear-gradient(135deg,rgba(124,58,237,.08) 0%,transparent 55%),linear-gradient(to bottom,transparent 62%,rgba(5,5,14,.35)); }
+html.light .thumb-grad { background:linear-gradient(135deg,var(--ps),transparent 55%),linear-gradient(to bottom,transparent 62%,rgba(255,255,255,.35)); }
+.proj-badge { position:absolute; top:.875rem; right:.875rem; z-index:4; padding:.25rem .75rem; border-radius:100px; background:linear-gradient(135deg,var(--p),var(--p2)); color:#fff; font-size:.58rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; box-shadow:0 2px 12px rgba(0,0,0,.35); }
 .proj-body { padding:1.5rem; }
 .proj-name { font-size:.97rem; font-weight:700; color:var(--tx); margin-bottom:.4rem; }
 .proj-about { font-size:.8rem; color:var(--tx2); line-height:1.75; font-weight:300; margin-bottom:1rem; }
