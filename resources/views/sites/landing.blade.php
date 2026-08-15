@@ -252,11 +252,58 @@
           </div>
         </div>
         <div id="ctRight">
-          <div class="fg"><label class="fl">Your Name</label><input type="text" class="fi" placeholder="Muhammad Ali"/></div>
-          <div class="fg"><label class="fl">Email Address</label><input type="email" class="fi" placeholder="you@example.com"/></div>
-          <div class="fg"><label class="fl">Subject</label><input type="text" class="fi" placeholder="Project Inquiry"/></div>
-          <div class="fg"><label class="fl">Message</label><textarea class="fi" placeholder="Tell me about your project…"></textarea></div>
-          <button class="submit"><span>Send Message ✉️</span></button>
+          <form action="{{ route('contact.store') }}" method="POST" autocomplete="off" style="width: 100%;">
+            @csrf
+
+            <div class="fg">
+              <label class="fl">Full Name *</label>
+              <input type="text" name="name" required class="fi" placeholder="Muhammad Sheraz" />
+              @error('name')
+                <p style="color: #ff4757; font-size: 12px; margin-top: 0.4rem;">{{ $message }}</p>
+              @enderror
+            </div>
+
+            <div class="fg">
+              <label class="fl">Email Address *</label>
+              <input type="email" name="email" required class="fi" placeholder="you@example.com" />
+              @error('email')
+                <p style="color: #ff4757; font-size: 12px; margin-top: 0.4rem;">{{ $message }}</p>
+              @enderror
+            </div>
+
+            <div class="fg">
+              <label class="fl">Subject *</label>
+              <input type="text" name="subject" required class="fi" placeholder="Project Inquiry" />
+              @error('subject')
+                <p style="color: #ff4757; font-size: 12px; margin-top: 0.4rem;">{{ $message }}</p>
+              @enderror
+            </div>
+
+            <div class="fg">
+              <label class="fl">Phone Number</label>
+              <input type="text" name="phone" class="fi" placeholder="+92 300 1234567 (Optional)" />
+            </div>
+
+            <div class="fg">
+              <label class="fl">Message *</label>
+              <textarea name="message" required class="fi" placeholder="Tell me about your project targets, features and timelines…"></textarea>
+              @error('message')
+                <p style="color: #ff4757; font-size: 12px; margin-top: 0.4rem;">{{ $message }}</p>
+              @enderror
+            </div>
+
+            <button type="submit" class="submit"><span>Send Message ✉️</span></button>
+          </form>
+
+          @if(session('success'))
+          <div style="margin-top: 1.5rem; display: flex; align-items: center; gap: 0.8rem; background: rgba(37, 211, 102, 0.04); border: 1px solid rgba(37, 211, 102, 0.15); padding: 0.9rem 1.2rem; border-radius: 12px; width: 100%;">
+            <span style="color: #25d366; font-size: 14px;">&check;</span>
+            <div>
+              <p style="font-size: 10px; font-weight: 700; color: #25d366; text-transform: uppercase; letter-spacing: 0.05em; margin: 0;">Message Completed</p>
+              <p style="font-size: 12px; color: var(--tx2); margin: 2px 0 0 0;">{{ session('success') }}</p>
+            </div>
+          </div>
+          @endif
         </div>
       </div>
     </div>
